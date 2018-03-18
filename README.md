@@ -6,3 +6,4 @@ see tensorflow [installation](https://github.com/suzyi/tensorflow/blob/master/te
 ## 2 - Mathematical basics
 ### 2.1 - PCA
 ### 2.1 - SVD
+chage
