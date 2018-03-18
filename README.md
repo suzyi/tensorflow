@@ -1,8 +1,4 @@
 # tensorflow installation
-see tensorflow [installation](https://github.com/suzyi/tensorflow/blob/master/test.ipynb)
+See tensorflow [installation](https://github.com/suzyi/tensorflow/blob/master/test.ipynb) install tensorflow on ubuntu
 # Examples of tensorflow
-## 1 - Basic implementation
-+ Hello world! [notebook](https://github.com/suzyi/tensorflow/blob/master/test.ipynb)
-## 2 - Mathematical basics
-### 2.1 - PCA
-### 2.1 - SVD
+Examples can be found in [here](https://github.com/suzyi/TensorFlow-Examples)
