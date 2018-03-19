@@ -3,6 +3,7 @@
 + **multiGPU**. How to use multiGPU to accelerate computation?
 + **云计算服务器**. 怎么租用阿里云服务器，或者amazon, tencent, nvidia, Google, facebook等的服务器进行高性能计算？
 + **adam algorithm**. Read the original paper about adam algorithm.
++ **dropout algorithm in tensorflow**. Read the original code for dropout algorithm in tensorflow.
 # 1 - tensorflow installation
 **[Official installation document](https://www.tensorflow.org/install/install_linux) on ubuntu**.
 # 2 - Examples of tensorflow
