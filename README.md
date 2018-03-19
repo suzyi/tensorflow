@@ -15,4 +15,5 @@
 基本上现在的梯度下降都是基于mini-batch的，所以深度学习框架的函数中经常会出现batch_size，就是指这个。 
 + **[epoch & iteration](http://blog.csdn.net/u013041398/article/details/72841854)**. 举例说明：训练集有1000个样本，batchsize=10，那么，
 训练整个样本集需要：100次iteration，1次epoch。1次epoch表示每个样本只用一次。具体的计算公式为：one epoch = numbers of iterations = N = 样本的数量/batch_size
++ **mnist**.Handwritten digits with values from 0 to 1. 我的理解：每张图片上的数字与背景都会有色差，把背景色定义为0，色差最深（绝对值最大）的点定义为1，其他色差按比例定义一个(0,1)区间上的浮点数，比如0.4, 0.77等等，然后就可以将一幅图片转换为一个矩阵。
 + **tensorflow中估计导数的方法什么？**
