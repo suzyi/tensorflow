@@ -36,8 +36,8 @@
 训练整个样本集需要：100次iteration，1次epoch。1次epoch表示每个样本只用一次。具体的计算公式为：one epoch = numbers of iterations = N = 样本的数量/batch_size
 + **class [tf.Graph](http://wiki.jikexueyuan.com/project/tensorflow-zh/api_docs/python/framework.html#Graph)**. A TensorFlow computation, represented as a dataflow graph. A Graph contains a set of Operation objects, which represent units of computation; and Tensor objects, which represent the units of data that flow between operations.
 + **[tf.nn.softmax_cross_entropy_with_logits](http://blog.csdn.net/mao_xiao_feng/article/details/53382790)**. See wikipedia for [cross entropy](https://en.wikipedia.org/wiki/Cross_entropy).
-+ **tf.reduce_mean[notebook](http://blog.csdn.net/qq_32166627/article/details/52734387)**
-+ **tf.random_normal[nootbook](https://github.com/suzyi/tensorflow/blob/master/random_normal.ipynb)**. Create random number, seed is optional.
-+ **tf.Session[nootbook](https://github.com/suzyi/tensorflow/blob/master/Session.ipynb)**.
++ **tf.reduce_mean[(nootbook)](http://blog.csdn.net/qq_32166627/article/details/52734387)**
++ **tf.random_normal[(nootbook)](https://github.com/suzyi/tensorflow/blob/master/random_normal.ipynb)**. Create random number, seed is optional.
++ **tf.Session[(nootbook)](https://github.com/suzyi/tensorflow/blob/master/Session.ipynb)**.
 # 3 - python operation command
 + **basic terminal command**. Enter the python environment in terminal with command `$ python` or `$ python2`, and back with `$ quit()`.
