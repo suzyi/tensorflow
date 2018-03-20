@@ -37,5 +37,6 @@
 + **class [tf.Graph](http://wiki.jikexueyuan.com/project/tensorflow-zh/api_docs/python/framework.html#Graph)**. A TensorFlow computation, represented as a dataflow graph. A Graph contains a set of Operation objects, which represent units of computation; and Tensor objects, which represent the units of data that flow between operations.
 + **[tf.nn.softmax_cross_entropy_with_logits](http://blog.csdn.net/mao_xiao_feng/article/details/53382790)**. See wikipedia for [cross entropy](https://en.wikipedia.org/wiki/Cross_entropy).
 + **[tf.reduce_mean](http://blog.csdn.net/qq_32166627/article/details/52734387)**
++ **[tf.random_normal]()**
 # 3 - python operation command
 + **basic terminal command**. Enter the python environment in terminal with command `$ python` or `$ python2`, and back with `$ quit()`.
