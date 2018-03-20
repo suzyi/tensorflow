@@ -38,6 +38,6 @@
 + **[tf.nn.softmax_cross_entropy_with_logits](http://blog.csdn.net/mao_xiao_feng/article/details/53382790)**. See wikipedia for [cross entropy](https://en.wikipedia.org/wiki/Cross_entropy).
 + **tf.reduce_mean[(nootbook)](http://blog.csdn.net/qq_32166627/article/details/52734387)**
 + **tf.random_normal[(nootbook)](https://github.com/suzyi/tensorflow/blob/master/random_normal.ipynb)**. Create random number, seed is optional.
-+ **tf.Session[(nootbook)](https://github.com/suzyi/tensorflow/blob/master/Session.ipynb)**.
++ **tf.Session [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/Session.ipynb)**.
 # 3 - python operation command
 + **basic terminal command**. Enter the python environment in terminal with command `$ python` or `$ python2`, and back with `$ quit()`.
