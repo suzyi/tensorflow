@@ -5,6 +5,7 @@
 + **adam algorithm**. Read the original paper about adam algorithm.
 + **dropout algorithm in tensorflow**. Read the original code for dropout algorithm in tensorflow.
 + Whether NIST is a binary?
++ Tensorflow的图结构是什么? 是表示tensor在图中流过吗?
 # 1 - tensorflow installation
 **[Official installation document](https://www.tensorflow.org/install/install_linux) on ubuntu**.
 # 2 - Examples of tensorflow
