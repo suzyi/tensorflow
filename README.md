@@ -1,4 +1,4 @@
-# 0 - Something confused me
+Something confused me
 + **tensorflow中估计导数的方法什么？**
 + **multiGPU**. How to use multiGPU to accelerate computation?
 + **云计算服务器**. 怎么租用阿里云服务器，或者amazon, tencent, nvidia, Google, facebook等的服务器进行高性能计算？
@@ -8,6 +8,8 @@
 + Tensorflow的图结构是什么? 是表示tensor在图中流过吗?
 # 1 - tensorflow installation
 **[Official installation document](https://www.tensorflow.org/install/install_linux) on ubuntu**.
+# 0 - tensorflow introduction
++ Tensorflow依赖于一个高效的C++后端来进行计算。与后端的这个连接叫做session。一般而言，使用TensorFlow程序的流程是先创建一个图，然后在session中启动它。
 # 2 - Examples of tensorflow
 ## 2-0 - **References**
 + **[api_docs](https://tensorflow.google.cn/api_docs/python/)**. The official api_doc provides an explicit illustration for each single command.
