@@ -12,13 +12,16 @@ Something confused me
 # 1 - tensorflow installation
 **[Official installation document](https://www.tensorflow.org/install/install_linux) on ubuntu**.
 ## errors & debugging
-+ After correctly installing tensorflow-gpu a few days, I found the screen resolution is extremely bad and then run `nvidia-smi` in terminal and it shows "NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running."
-
+### After correctly installing tensorflow-gpu a few days, I found the screen resolution is extremely bad and then run `nvidia-smi` in terminal and it shows "NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running."
+#### troubleshooting
++ By running `cat /proc/driver/nvidia/version`, I found my previously and correctly installed driver, now doesn't exist or more exactly, couldn't be loaded, since the directory `/proc/driver/nvidia` doesn't exits.
++ 
 # 2 - Examples of tensorflow
 ## 2-0 - **References**
 + **[api_docs](https://tensorflow.google.cn/api_docs/python/)**. The official api_doc provides an explicit illustration for each single command.
 + **Examples can be found in [here](https://github.com/suzyi/TensorFlow-Examples)**. There are many examples including basic [Hello, world!](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/1_Introduction/helloworld.ipynb) and advanced operation such as [CNN](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/notebooks/3_NeuralNetworks/convolutional_network_raw.ipynb).
-
++ Now verifying the cuDNN: change to the directory `cd ~/cudnn_samples_v7/mnistCUDNN/`, `make clean && make`, and execute `./mnistCUDNN`, then output unknown error, which mean cuDNN doesn't work properly. However, the first time I do the same steps it output "Test passed!".
++ By checking tensorflow with example "Hello, world!" in the terminal, it failed call to cuInit: CUDA_ERROR_UNKNOWN. However, this example can be executed in Jupyter-notebook, maybe it doesn't use the GPU.
 
 ## 2-1 - **understand [mnist](http://yann.lecun.com/exdb/mnist/)**.
 ### terminology
