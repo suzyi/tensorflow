@@ -14,8 +14,9 @@ Something confused me
 ## errors & debugging
 ### After correctly installing tensorflow-gpu a few days, I found the screen resolution is extremely bad and then run `nvidia-smi` in terminal and it shows "NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running."
 #### troubleshooting
-+ By running `cat /proc/driver/nvidia/version`, I found my previously and correctly installed driver, now doesn't exist or more exactly, couldn't be loaded, since the directory `/proc/driver/nvidia` doesn't exits.
-+ 
++ Cuda error: by running `cat /proc/driver/nvidia/version`, I found my previously and correctly installed driver, now doesn't exist or more exactly, couldn't be loaded, since the directory `/proc/driver/nvidia` doesn't exits.
++ cuDNN error:
++ tensorflow error:
 # 2 - Examples of tensorflow
 ## 2-0 - **References**
 + **[api_docs](https://tensorflow.google.cn/api_docs/python/)**. The official api_doc provides an explicit illustration for each single command.
