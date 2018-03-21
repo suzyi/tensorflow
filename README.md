@@ -6,10 +6,13 @@ Something confused me
 + **dropout algorithm in tensorflow**. Read the original code for dropout algorithm in tensorflow.
 + Whether NIST is a binary?
 + Tensorflow的图结构是什么? 是表示tensor在图中流过吗?
-# 1 - tensorflow installation
-**[Official installation document](https://www.tensorflow.org/install/install_linux) on ubuntu**.
 # 0 - tensorflow introduction
 + Tensorflow依赖于一个高效的C++后端来进行计算。与后端的这个连接叫做session。一般而言，使用TensorFlow程序的流程是先创建一个图，然后在session中启动它。
+# 1 - tensorflow installation
+**[Official installation document](https://www.tensorflow.org/install/install_linux) on ubuntu**.
+## errors & debugging
++ After correctly installing tensorflow-gpu a few days, I found the screen resolution is extremely bad and then run `nvidia-smi` in terminal and it shows "NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running."
+
 # 2 - Examples of tensorflow
 ## 2-0 - **References**
 + **[api_docs](https://tensorflow.google.cn/api_docs/python/)**. The official api_doc provides an explicit illustration for each single command.
