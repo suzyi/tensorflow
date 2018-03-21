@@ -18,7 +18,7 @@ There are two methods to install CUDA, including distribution-specific packages 
 + **Determine which method would you prefer to install tensorflow, package manager based or runfile based?**. The official document recommend the former, if possible. One shall note that the runfile-based installation require user to disable the Nouveau driver and then do some settings under text mode.
 + **determine matched versions for CUDA Toolkit & cuDNN & tensorflow**. There are strict version matching requirement, e.g cuDNN v7.0. must match with CUDA Toolkit 9.0. The official tensorflow installation document listed some recommanded pairs.
 + **Download [CUDA Toolkit](https://developer.nvidia.com/cuda-downloads) & [cuDNN](https://developer.nvidia.com/cudnn)**. CUDA Toolkit package has around 1.4GB, and cuDNN has about three files around 200MB need to be downloaded. By the way, you need register first and answer a questionaire before you are allowed to download cuDNN package.
-
++ **Perform some mandatory actions**. Some actions must be taken before CUDA Toolkit and driver can be used, see [NVIDIA CUDA INSTALLATION GUIDE FOR LINUX](https://docs.nvidia.com/cuda/) for more details.
 ## errors & debugging
 ### After correctly installing tensorflow-gpu a few days, I found the screen resolution is extremely bad and then run `nvidia-smi` in terminal and it shows "NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running."
 #### troubleshooting
