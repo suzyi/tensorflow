@@ -9,8 +9,10 @@ Something confused me
 + 蓝牙通讯的原理是什么?
 # 0 - tensorflow introduction
 + Tensorflow依赖于一个高效的C++后端来进行计算。与后端的这个连接叫做session。一般而言，使用TensorFlow程序的流程是先创建一个图，然后在session中启动它。
-# 1 - tensorflow installation
+# 1 - Installating tensorflow-gpu in ubuntu 16.04 x86-64
 **[Official installation document](https://www.tensorflow.org/install/install_linux) on ubuntu**.
++ **CUDA installation**. There are two methods to install CUDA, including distribution-specific packages (RPM and Deb packages, i.e. a ".deb" file, with install command like "sudo apt-get install cuda") and distribution-independent package (runfile package, i.e. a ".run" file, with a install command maybe `sudo sh cuda_<version>_linux.run` under certain enviroment check action.). The method runfile installation means to install CUDA with a standalone installer which is a ".run" file and is completely self-contained.
+
 ## errors & debugging
 ### After correctly installing tensorflow-gpu a few days, I found the screen resolution is extremely bad and then run `nvidia-smi` in terminal and it shows "NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running."
 #### troubleshooting
