@@ -25,7 +25,8 @@ There are two methods to install CUDA, including distribution-specific packages 
 + Cuda error: by running `cat /proc/driver/nvidia/version`, I found my previously and correctly installed driver, now doesn't exist or more exactly, couldn't be loaded, since the directory `/proc/driver/nvidia` doesn't exits.
 + cuDNN error: Verifying cuDNN by executing `cd cudnn_samples_v7/mnistCUDNN/` --> `make clean && make` --> `./mnistCUDNN`, it output unknown error. However, the first time I check the validation of cuDNN with these same steps, it shows "Test passed!".
 + tensorflow error: When execute the example "Hello, world!" in terminal, it failed to call to cuInit: CUDA_ERROR_UNKNOWN.
-#### My solution: uninstall CUDA Toolkit and reinstall.
+#### My solution
++ **uninstall CUDA Toolkit and reinstall**. You just need to uninstall CUDA Toolkit, do not uninstall cuDNN and tensorflow. With this step finished, reboot and you will see a high resolution in the screen.
 # 2 - Examples of tensorflow
 ## 2-0 - **References**
 + **[api_docs](https://tensorflow.google.cn/api_docs/python/)**. The official api_doc provides an explicit illustration for each single command.
