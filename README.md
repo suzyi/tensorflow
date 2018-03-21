@@ -18,6 +18,7 @@ There are two methods to install CUDA, including distribution-specific packages 
 + **Determine which method would you prefer to install tensorflow, package manager based or runfile based?**. The official document recommend the former, if possible. One shall note that the runfile-based installation require user to disable the Nouveau driver and then do some settings under text mode.
 + **determine matched versions for CUDA Toolkit & cuDNN & tensorflow**. There are strict version matching requirement, e.g cuDNN v7.0. must match with CUDA Toolkit 9.0. The official tensorflow installation document listed some recommanded pairs.
 + **Download [CUDA Toolkit](https://developer.nvidia.com/cuda-downloads) & [cuDNN](https://developer.nvidia.com/cudnn)**. CUDA Toolkit package has around 1.4GB, and cuDNN has about three files around 200MB need to be downloaded. By the way, you need register first and answer a questionaire before you are allowed to download cuDNN package.
++ **Install CUDA Toolkit**. After finishing the installation of CUDA Toolkit, you will have CUDA Toolkit, Driver and cuda itself in your system. To see their version, execute `nvcc -V` for Toolkit and `cat /proc/driver/nvidia/version` for cuda Driver.
 + **Perform some mandatory actions**. Some actions must be taken before CUDA Toolkit and driver can be used, see [NVIDIA CUDA INSTALLATION GUIDE FOR LINUX](https://docs.nvidia.com/cuda/) for more details.
 ## errors & debugging
 ### After correctly installing tensorflow-gpu a few days, I found the screen resolution is extremely bad and then run `nvidia-smi` in terminal and it shows "NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running."
@@ -27,6 +28,8 @@ There are two methods to install CUDA, including distribution-specific packages 
 + tensorflow error: When execute the example "Hello, world!" in terminal, it failed to call to cuInit: CUDA_ERROR_UNKNOWN.
 #### My solution
 + **uninstall CUDA Toolkit and reinstall**. You just need to uninstall CUDA Toolkit, do not uninstall cuDNN and tensorflow. With this step finished, reboot and you will see a high resolution in the screen.
++ **test on cuDNN to see if it works well now**. Just do the same as the above troubleshooting for cuDNN. If it works correctly, you have got out of this problem and then ignore the following step. But you screen might tell you there are some "fatal error". With this situation, do the next.
++ **uninstall cuDNN**.
 # 2 - Examples of tensorflow
 ## 2-0 - **References**
 + **[api_docs](https://tensorflow.google.cn/api_docs/python/)**. The official api_doc provides an explicit illustration for each single command.
