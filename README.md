@@ -6,6 +6,7 @@ Something confused me
 + **dropout algorithm in tensorflow**. Read the original code for dropout algorithm in tensorflow.
 + Whether NIST is a binary?
 + Tensorflow的图结构是什么? 是表示tensor在图中流过吗?
++ 蓝牙通讯的原理是什么?
 # 0 - tensorflow introduction
 + Tensorflow依赖于一个高效的C++后端来进行计算。与后端的这个连接叫做session。一般而言，使用TensorFlow程序的流程是先创建一个图，然后在session中启动它。
 # 1 - tensorflow installation
