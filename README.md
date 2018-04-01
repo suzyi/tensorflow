@@ -48,7 +48,7 @@ There are two methods to install CUDA, including distribution-specific packages 
 ### understanding of MNIST
 + **[NIST](https://www.nist.gov/srd/nist-special-database-19)**. NIST is an original database containing many (binary, at least SD-3 and SD-1 are.) images with handprinting digits or aplabetic characters.
 + **MNIST**. MNIST is a grey levels image database constructed from NIST's Special Database 3 (SD-3) and Special Database 1 (SD-1) with the anti-aliasing technique. One should note that both SD-3 and SD-1 contain binary images. MNIST was normalized to fit a 28-by-28 pixel box while preserving ratio. It has 60000 handwitting images for training and 60000 for testing, while only a subset of 10000 test images is available. The full 60000 training set is available. All files in MIST are not in any standard image format so you have to write your own program to read them.
-+ **Read MNIST using tensorflow in python ([nootbook](https://github.com/suzyi/tensorflow/blob/master/readMNIST.ipynb))**. This nootbook contains codes for reading the images and labels in MNIST. `one_hot=True` gives label with the vector form that has only one non-zero element with value 1 in the vector, like `array([0., 0., 0., 0., 1., 0., 0., 0., 0., 0.])` represents 4, and `one_hot=False` directly gives 4.
++ **Read MNIST using tensorflow in python ([nootbook](https://github.com/suzyi/tensorflow/blob/master/tf/readMNIST.ipynb))**. This nootbook contains codes for reading the images and labels in MNIST. `one_hot=True` gives label with the vector form that has only one non-zero element with value 1 in the vector, like `array([0., 0., 0., 0., 1., 0., 0., 0., 0., 0.])` represents 4, and `one_hot=False` directly gives 4.
 ## 2-2 - Understanding of some single commands
 + **a=placeholder(tf.int16)**. 
 + **batch,[将数据集按mini_batch划分](https://sthsf.github.io/wiki/Algorithm/DeepLearning/Tensorflow%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Tensorflow%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86---%E8%AE%AD%E7%BB%83%E6%A0%B7%E6%9C%AC%E7%9A%84batch_size%E6%95%B0%E6%8D%AE%E7%9A%84%E5%87%86%E5%A4%87.html)**
@@ -62,9 +62,9 @@ There are two methods to install CUDA, including distribution-specific packages 
 + **class [tf.Graph](http://wiki.jikexueyuan.com/project/tensorflow-zh/api_docs/python/framework.html#Graph)**. A TensorFlow computation, represented as a dataflow graph. A Graph contains a set of Operation objects, which represent units of computation; and Tensor objects, which represent the units of data that flow between operations.
 + **[tf.nn.softmax_cross_entropy_with_logits](http://blog.csdn.net/mao_xiao_feng/article/details/53382790)  [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/softmax_cross_entropy_with_logits.ipynb)**. See wikipedia for [cross entropy](https://en.wikipedia.org/wiki/Cross_entropy).
 + **tf.reduce_mean [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/reduce_mean.ipynb)**
-+ **tf.random_normal [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/random_normal.ipynb)**. Create random number, seed is optional.
-+ **tf.Variable [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/Variable.ipynb)**. Usage of tf.Variable().
-+ **tf.Session [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/Session.ipynb)**.
++ **tf.random_normal [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/random_normal.ipynb)**. Create random number, seed is optional.
++ **tf.Variable [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/Variable.ipynb)**. Usage of tf.Variable().
++ **tf.Session [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/Session.ipynb)**.
 + **mnist.train.next_batch [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/next_batch.ipynb)**. Return the next `batch_size` examples from this data set.
 + **3-D tensor, tf.constant, tf.matmul, tf.add [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/matmul.ipynb)**. This notebook contains examples like creating 2-D and 3-D tensors and operations like `tf.constant`, `tf.matmul`, `tf.add`. For tensor A has size of h-by-m-by-n and tensor B has size of h-by-n-by-p, then `tf.matmul(A,B)` gives a tensor with size of h-by-m-by-p. 
 # 3 - python operation command
