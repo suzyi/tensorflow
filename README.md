@@ -62,6 +62,7 @@ There are two methods to install CUDA, including distribution-specific packages 
 + **class [tf.Graph](http://wiki.jikexueyuan.com/project/tensorflow-zh/api_docs/python/framework.html#Graph)**. A TensorFlow computation, represented as a dataflow graph. A Graph contains a set of Operation objects, which represent units of computation; and Tensor objects, which represent the units of data that flow between operations.
 + **[tf.nn.softmax_cross_entropy_with_logits](http://blog.csdn.net/mao_xiao_feng/article/details/53382790)  [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/softmax_cross_entropy_with_logits.ipynb)**. See wikipedia for [cross entropy](https://en.wikipedia.org/wiki/Cross_entropy).
 + **tf.argmax [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/argmax.ipynb)**
++ **tf.cast [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/cast.ipynb)**
 + **tf.equal [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/equal.ipynb)**
 + **tf.reduce_mean [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/reduce_mean.ipynb)**
 + **tf.random_normal [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/random_normal.ipynb)**. Create random number, seed is optional.
