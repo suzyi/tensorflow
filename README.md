@@ -66,7 +66,7 @@ There are two methods to install CUDA, including distribution-specific packages 
 + **tf.equal [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/equal.ipynb)**
 + **tf.reduce_mean [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/reduce_mean.ipynb)**
 + **tf.random_normal [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/random_normal.ipynb)**. Create random number, seed is optional.
-+ **tf.Variable [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/graph/tensorboard.ipynb)**. Graph visualisation.
++ **tensorboard [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/graph/tensorboard.ipynb)**. Graph visualisation.
 + **tf.Variable [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/Variable.ipynb)**. Usage of tf.Variable().
 + **tf.Session [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/Session.ipynb)**.
 + **mnist.train.next_batch [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/next_batch.ipynb)**. Return the next `batch_size` examples from this data set.
