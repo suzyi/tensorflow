@@ -1,5 +1,5 @@
 Something confused me
-+ **tensorflow中估计导数的方法什么？**
++ **tensorflow中估计导数的方法什么？** [(source code)](https://github.com/tensorflow/tensorflow/tree/7ad74a0d66c5b8547382dfd3aad503288f051ae9/tensorflow/python/training)
 + **multiGPU**. How to use multiGPU to accelerate computation?
 + **云计算服务器**. 怎么租用阿里云服务器，或者amazon, tencent, nvidia, Google, facebook等的服务器进行高性能计算？
 + **adam algorithm**. Read the original paper about adam algorithm.
