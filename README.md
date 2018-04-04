@@ -2,6 +2,7 @@ Something confused me
 + **tensorflow中估计导数的方法什么？** [(source code)](https://github.com/tensorflow/tensorflow/tree/7ad74a0d66c5b8547382dfd3aad503288f051ae9/tensorflow/python/training) [(official intro)](https://www.tensorflow.org/api_guides/python/train) [(recommended reading)](http://ruder.io/optimizing-gradient-descent/)
 + **multiGPU**. How to use multiGPU to accelerate computation?
 + **云计算服务器**. 怎么租用阿里云服务器，或者amazon, tencent, nvidia, Google, facebook等的服务器进行高性能计算？
++ **CNN**. An [great illustration](http://www.dataguru.cn/article-10638-1.html) of CNN.
 + **adam algorithm**. Read the original paper about adam algorithm.
 + **dropout algorithm in tensorflow**. Read the original code for dropout algorithm in tensorflow.
 + Whether NIST is a binary?
