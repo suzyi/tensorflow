@@ -61,7 +61,7 @@ There are two methods to install CUDA, including distribution-specific packages 
 基本上现在的梯度下降都是基于mini-batch的，所以深度学习框架的函数中经常会出现batch_size，就是指这个。 
 + **[epoch & iteration](http://blog.csdn.net/u013041398/article/details/72841854)**. 举例说明：训练集有1000个样本，batchsize=10，那么，
 训练整个样本集需要：100次iteration，1次epoch。1次epoch表示每个样本只用一次。具体的计算公式为：one epoch = numbers of iterations = N = 样本的数量/batch_size
-+ **[tf.layer.dense(inputs,units,activation=none,use_bias=true)](https://github.com/tensorflow/tensorflow/blob/r1.2/tensorflow/python/layers/core.py)**. `units` is the dimensionality of output space. Build a densely connected network. Default activation is linear function. Default use a bias.
++ **[tf.layer.dense(inputs,units,activation=none,use_bias=true)](https://github.com/tensorflow/tensorflow/blob/r1.2/tensorflow/python/layers/core.py)**. Each row of `inputs` is as a single example. `units` is the dimensionality of output space. Build a densely connected network. Default activation is linear function. Default use a bias.
 + **class [tf.Graph](http://wiki.jikexueyuan.com/project/tensorflow-zh/api_docs/python/framework.html#Graph)**. A TensorFlow computation, represented as a dataflow graph. A Graph contains a set of Operation objects, which represent units of computation; and Tensor objects, which represent the units of data that flow between operations.
 + **[tf.nn.softmax_cross_entropy_with_logits](http://blog.csdn.net/mao_xiao_feng/article/details/53382790)  [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/softmax_cross_entropy_with_logits.ipynb)**. See wikipedia for [cross entropy](https://en.wikipedia.org/wiki/Cross_entropy).
 + **tf.argmax [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/argmax.ipynb)**
