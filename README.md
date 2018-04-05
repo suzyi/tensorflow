@@ -3,7 +3,7 @@ Something confused me
 + **multiGPU**. How to use multiGPU to accelerate computation?
 + **云计算服务器**. 怎么租用阿里云服务器，或者amazon, tencent, nvidia, Google, facebook等的服务器进行高性能计算？
 + **CNN**. An [great illustration](https://zhuanlan.zhihu.com/p/25249694) of CNN, written by Juefei Zhang, an Alibaba engineerer.
-+ **adam algorithm**. Read the original paper about adam algorithm.
++ **adam algorithm**. Read the original paper about adam algorithm. [Train a filter to acheive a goal, like classification or shape detection](https://www.zhihu.com/question/39022858).
 + **dropout algorithm in tensorflow**. Read the original code for dropout algorithm in tensorflow.
 + Whether NIST is a binary?
 + Tensorflow的图结构是什么? 是表示tensor在图中流过吗?[(understand computational graph)](http://www.bubuko.com/infodetail-2280472.html) 也许这样的方式就是可微分编程！
