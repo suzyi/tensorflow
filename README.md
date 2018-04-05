@@ -54,7 +54,7 @@ There are two methods to install CUDA, including distribution-specific packages 
 + **batch_x, batch_y = mnist.train.next_batch(batch_size)**. `batch_x` is of type `numpy.ndarray` with size 'batch_size-by-784', note that `28*28=784` represent any figure in mnist has 784 pixels in tatal. `print(batch_x)`, `print(type(batch_x))` and `print(np.shape(batch_x)` are all available for knowing the attributes of `batch_x`, and use `print(batch_x[:,0])` to see its first column.
 ## 2-2 - Understanding of some single commands
 + **tf.placeholder(dtype, shape=none, name=none), feed_dict ([nootbook](https://github.com/suzyi/tensorflow/blob/master/tf/feed_dict.ipynb))**. By default, `shape=none` represents a univariate variable. `shape=[None, 3]`, gives a matrix with elements are variables, and it has size of 3 columns but under-determined rows.
-+ **tf.nn.dropout [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/dropout.ipynb)**
++ **tf.nn.dropout [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/dropout.ipynb)**. This command haven't been completely figured out.
 + **batch,[将数据集按mini_batch划分](https://sthsf.github.io/wiki/Algorithm/DeepLearning/Tensorflow%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Tensorflow%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86---%E8%AE%AD%E7%BB%83%E6%A0%B7%E6%9C%AC%E7%9A%84batch_size%E6%95%B0%E6%8D%AE%E7%9A%84%E5%87%86%E5%A4%87.html)**
 深度学习的优化算法，说白了就是梯度下降，每次的参数更新有两种方式:
 第一种，遍历全部数据集算一次损失函数，然后算函数对各个参数的梯度，更新梯度。这种方法每更新一次参数都要把数据集里的所有样本都看一遍，计算量开销大，计算速度慢，不支持在线学习，这称为Batch gradient descent，批梯度下降。
