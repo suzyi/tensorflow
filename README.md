@@ -3,6 +3,7 @@ Something confused me
 + **multiGPU**. How to use multiGPU to accelerate computation?
 + **云计算服务器**. 怎么租用阿里云服务器，或者amazon, tencent, nvidia, Google, facebook等的服务器进行高性能计算？
 + **CNN**. An [great illustration](https://zhuanlan.zhihu.com/p/25249694) of CNN, written by Juefei Zhang, an Alibaba engineerer. For each single command to build a CNN in tensorflow, see [Web(API in jianshu, in Chinese)](https://www.jianshu.com/p/e3a79eac554f) and [Web(github, in English)](https://github.com/jikexueyuanwiki/tensorflow-zh/blob/master/SOURCE/api_docs/python/nn.md).
++ **How to calculate padding and output shape when use `tf.nn.conv2d()` to MNIST?** See [(Web1)](https://blog.csdn.net/jk981811667/article/details/78892480) and [(Web2)](http://cs231n.github.io/convolutional-networks/)
 + **adam algorithm**. Read the original paper about adam algorithm. [Train a filter to acheive a goal, like classification or shape detection, 训练CNN的意义是在训练滤波器，是滤波器对特定的模式有较高的激活](https://www.zhihu.com/question/39022858).
 + **dropout algorithm in tensorflow**. Read the original code for dropout algorithm in tensorflow.
 + Whether NIST is a binary?
