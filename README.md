@@ -73,6 +73,7 @@ There are two methods to install CUDA, including distribution-specific packages 
 + **tf.cast [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/cast.ipynb)**
 + **tf.equal [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/equal.ipynb)**
 + **tf.reduce_mean [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/reduce_mean.ipynb)**
++ **tf.random_uniform(shape,minval=0,maxval=None,dtype=tf.float32,seed=None,name=None)**. Return a uniformly distributed random values with shape are nessary to provide.
 + **tf.random_normal [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/random_normal.ipynb)**. Create random number, seed is optional.
 + **tensorboard [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/graph/tensorboard.ipynb)**. Graph visualisation.
 + **tf.Variable [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/Variable.ipynb)**. Usage of tf.Variable().
