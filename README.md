@@ -1,5 +1,5 @@
 Something confused me
-+ **Unable to visit tensorflow.org?** See [(github)](https://github.com/tensorflow/tensorflow/issues/3834) for solution.
++ **Unable to visit tensorflow.org?** See [(github)](https://github.com/tensorflow/tensorflow/issues/3834) for solution, or simply connect to `tensorflow.google.cn`
 + **tensorflow中估计导数的方法什么？** [(source code)](https://github.com/tensorflow/tensorflow/tree/7ad74a0d66c5b8547382dfd3aad503288f051ae9/tensorflow/python/training) [(official intro)](https://www.tensorflow.org/api_guides/python/train) [(recommended reading)](http://ruder.io/optimizing-gradient-descent/)
 + **multiGPU**. How to use multiGPU to accelerate computation?
 + **云计算服务器**. 怎么租用阿里云服务器，或者amazon, tencent, nvidia, Google, facebook等的服务器进行高性能计算？
