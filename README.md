@@ -88,5 +88,6 @@ There are two methods to install CUDA, including distribution-specific packages 
 + **tf.nn.bias_add(), tf.add() [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/bias_add.ipynb)**. We show the difference betweent the `tf.nn.bias_add()` and `tf.add()`.
 ### 2-2-2 - some single commands in building CNN-type network
 + **`weight={'wcl': tf.random_normal([2,3,1,7])}` [(notebook)]()**
++ **solve lasso using `GradientDescentOptimizer` [(notebook-no dataset api)](https://github.com/suzyi/tensorflow/blob/master/tf/lasso-solver.ipynb)**
 # 3 - python operation command
 + **basic terminal command**. Enter the python environment in terminal with command `$ python` or `$ python2`, and back with `$ quit()`.
