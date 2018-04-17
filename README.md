@@ -88,7 +88,10 @@ There are two methods to install CUDA, including distribution-specific packages 
 + **3-D tensor, tf.constant, tf.matmul, tf.add [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/matmul.ipynb)**. This notebook contains examples like creating 2-D and 3-D tensors and operations like `tf.constant`, `tf.matmul`, `tf.add`. For tensor A has size of h-by-m-by-n and tensor B has size of h-by-n-by-p, then `tf.matmul(A,B)` gives a tensor with size of h-by-m-by-p. 
 + **tf.nn.bias_add(), tf.add() [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/bias_add.ipynb)**. We show the difference betweent the `tf.nn.bias_add()` and `tf.add()`.
 ### 2-2-2 - some single commands in building CNN-type network
-+ **`weight={'wcl': tf.random_normal([2,3,1,7])}` [(notebook)]()**
-+ **solve lasso using `GradientDescentOptimizer` [(notebook-no dataset api)](https://github.com/suzyi/tensorflow/blob/master/tf/lasso-solver.ipynb)** See [(notebook-with dataset API)](https://github.com/suzyi/tensorflow/blob/master/tf/lasso-datasetAPI.ipynb) for more high-level solver which use dataset API.
++ **`weight={'wcl': tf.random_normal([2,3,1,7])}` [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/lasso-directlySolve.ipynb)**
++ **solve lasso using `GradientDescentOptimizer` ** 
++ See [(notebook-directly solve lasso)]() for solver with no inputs.
++ See [(notebook-no dataset api)](https://github.com/suzyi/tensorflow/blob/master/tf/lasso-NoAPI.ipynb) for solver with training inputs but no data API.
++ See [(notebook-with dataset API)](https://github.com/suzyi/tensorflow/blob/master/tf/lasso-datasetAPI.ipynb) for more high-level solver which use dataset API.
 # 3 - python operation command
 + **basic terminal command**. Enter the python environment in terminal with command `$ python` or `$ python2`, and back with `$ quit()`.
