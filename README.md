@@ -89,9 +89,11 @@ There are two methods to install CUDA, including distribution-specific packages 
 + **tf.nn.bias_add(), tf.add() [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/bias_add.ipynb)**. We show the difference betweent the `tf.nn.bias_add()` and `tf.add()`.
 ### 2-2-2 - some single commands in building CNN-type network
 + **`weight={'wcl': tf.random_normal([2,3,1,7])}` [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/lasso-directlySolve.ipynb)**
+# 3 - python operation command
++ **basic terminal command**. Enter the python environment in terminal with command `$ python` or `$ python2`, and back with `$ quit()`.
+# 4 - dataset API and its application
+### 4-1-1 - example of dataset API - solving lasso-type problem
 + **solve lasso using `GradientDescentOptimizer` ** 
 + See [(notebook-directly solve lasso)]() for solver with no inputs.
 + See [(notebook-no dataset api)](https://github.com/suzyi/tensorflow/blob/master/tf/lasso-NoAPI.ipynb) for solver with training inputs but no data API.
 + See [(notebook-with dataset API)](https://github.com/suzyi/tensorflow/blob/master/tf/lasso-datasetAPI.ipynb) for more high-level solver which use dataset API.
-# 3 - python operation command
-+ **basic terminal command**. Enter the python environment in terminal with command `$ python` or `$ python2`, and back with `$ quit()`.
