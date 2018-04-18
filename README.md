@@ -8,7 +8,7 @@ Something confused me
 + **multiGPU**. How to use multiGPU to accelerate computation?
 + **云计算服务器**. 怎么租用阿里云服务器，或者amazon, tencent, nvidia, Google, facebook等的服务器进行高性能计算？
 + **CNN**. An [great illustration](https://zhuanlan.zhihu.com/p/25249694) of CNN, written by Juefei Zhang, an Alibaba engineerer. For each single command to build a CNN in tensorflow, see [Web(API in jianshu, in Chinese)](https://www.jianshu.com/p/e3a79eac554f) and [Web(github, in English)](https://github.com/jikexueyuanwiki/tensorflow-zh/blob/master/SOURCE/api_docs/python/nn.md).
-+ **How to calculate padding and output shape when use `tf.nn.conv2d()` to MNIST?** See [(Web1)](https://blog.csdn.net/jk981811667/article/details/78892480) and [(Web2)](http://cs231n.github.io/convolutional-networks/)
++ **How to calculate padding and output shape when use `nn.conv2d()` to MNIST?** See [(Web1)](https://blog.csdn.net/jk981811667/article/details/78892480) and [(Web2)](http://cs231n.github.io/convolutional-networks/)
 + **adam algorithm**. Read the original paper about adam algorithm. [Train a filter to acheive a goal, like classification or shape detection, 训练CNN的意义是在训练滤波器，是滤波器对特定的模式有较高的激活](https://www.zhihu.com/question/39022858).
 + **dropout algorithm in tensorflow**. Read the original code for dropout algorithm in tensorflow.
 + Whether NIST is a binary?
@@ -23,6 +23,7 @@ Something confused me
 ### intro to cuda and install method
 There are two methods to install CUDA, including distribution-specific packages (RPM and Deb packages, i.e. a ".deb" file, with install command like "sudo apt-get install cuda") and distribution-independent package (runfile package, i.e. a ".run" file, with a install command maybe `sudo sh cuda_<version>_linux.run` under certain enviroment check action.). The method runfile installation means to install CUDA with a standalone installer which is a ".run" file and is completely self-contained.
 + **uninstall cuda Toolkit and driver**. A cuda Toolkit contains cuda driver, samples source code and other resources. Before installing CUDA, uninstall previously installation that could conflict. Even though you hadn't previously have the cuda installed in your system, you can perform the uninstall step and this will not affect your system. By default, cuda was installed in the directory `/usr/local/cuda-X.Y/`. To uninstall it, execute `sudo /usr/local/cuda-X.Y/bin/uninstall_cuda_X.Y.pl` and then uninstall a Driver runfile installation by `sudo /usr/bin/nvidia-uninstall`. Uninstall RPM/Deb installation by `sudo apt-get --purge remove <package-name>`.
++ **tf.reshape(), tf.stack() [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/reshape_stack.ipynb)**
 + **tf.metrics.accuracy() [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/metrics_accuracy.ipynb)**.
 + **Determine which method would you prefer to install tensorflow, package manager based or runfile based?**. The official document recommend the former, if possible. One shall note that the runfile-based installation require user to disable the Nouveau driver and then do some settings under text mode.
 + **determine matched versions for CUDA Toolkit & cuDNN & tensorflow**. There are strict version matching requirement, e.g cuDNN v7.0. must match with CUDA Toolkit 9.0. The official tensorflow installation document listed some recommanded pairs.
