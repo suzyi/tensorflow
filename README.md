@@ -95,8 +95,11 @@ There are two methods to install CUDA, including distribution-specific packages 
 + **`weight={'wcl': tf.random_normal([2,3,1,7])}` [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/random_normal.ipynb)**
 # 3 - python operation command
 + **basic terminal command**. Enter the python environment in terminal with command `$ python` or `$ python2`, and back with `$ quit()`.
-# 4 - dataset API and its application
-### 4-1-1 - example of dataset API - solving lasso-type problem
+# 4 - understanding of tensorflow
+## 4 - 1 Variable
+There are three kind of variables in tensorflow, including `tf.Variable()`(- trainable), `tf.placeholder("float", [None, num_input])`(- data interface) and `tf.constant([[1, 2, 3], [4, 5, 6]], dtype = "float32")`(- create constant).
+## 4 - 2 dataset API and its application
+### 4-2-1 - example of dataset API - solving lasso-type problem
 solve lasso using `GradientDescentOptimizer`.
 + See [(notebook-directly solve lasso)](https://github.com/suzyi/tensorflow/blob/master/tf/lasso-directlySolve.ipynb) for solver with no inputs.
 + See [(notebook-no dataset api)](https://github.com/suzyi/tensorflow/blob/master/tf/lasso-NoAPI.ipynb) for solver with training inputs but no data API.
