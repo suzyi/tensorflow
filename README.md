@@ -13,7 +13,8 @@ Something confused me
 + **dropout algorithm in tensorflow**. Read the original code for dropout algorithm in tensorflow.
 + Whether NIST is a binary?
 + Tensorflow的图结构是什么? 是表示tensor在图中流过吗?[(understand computational graph)](http://www.bubuko.com/infodetail-2280472.html) 也许这样的方式就是可微分编程！
-+ 蓝牙通讯的原理是什么?怎样搭建局域网？ Use "teamviewer" to connect two computer.
++ 蓝牙通讯的原理是什么?怎样搭建局域网？ Use "teamviewer" to connect two computer. Key words "Jupyter远程登录","两台电脑在不联网的情况下如何设置局域网互相访问？"
++ 尝试自己搭建一台DIY电脑！
 + Which company choose tensorflow as their development frame? mi.com, jd.com, uber, google, Zhongxing (ZTE) see [(tensorflow)](https://www.tensorflow.org/)
 # 0 - tensorflow introduction
 + Tensorflow依赖于一个高效的C++后端来进行计算。与后端的这个连接叫做session。一般而言，使用TensorFlow程序的流程是先创建一个图，然后在session中启动它。
