@@ -4,7 +4,7 @@ Something confused me
 + How to make tf.layer() allocated with activation?
 + **All API can and their definition can be found in [tensorflow API web](https://tensorflow.google.cn/api_docs/python/tf/metrics/accuracy)**
 + **A Chinese intro to `datasets API` in Iris dataset can be found in [(sohu)](http://www.sohu.com/a/191717118_390227)**
-+ **tensorflow中估计导数的方法什么？** [(source code)](https://github.com/tensorflow/tensorflow/tree/7ad74a0d66c5b8547382dfd3aad503288f051ae9/tensorflow/python/training) [(official intro)](https://www.tensorflow.org/api_guides/python/train) [(recommended reading)](http://ruder.io/optimizing-gradient-descent/). For theoretical introduction to compute derivative of any given function, see Deeplearningbook, Chapter 6.5 in page 218~.
++ **tensorflow中估计导数的方法什么？** [(source code)](https://github.com/tensorflow/tensorflow/tree/7ad74a0d66c5b8547382dfd3aad503288f051ae9/tensorflow/python/training) [(official intro)](https://www.tensorflow.org/api_guides/python/train) [(recommended reading)](http://ruder.io/optimizing-gradient-descent/). For theoretical introduction to compute derivative of any given function, see Deeplearningbook, Chapter 6.5 in page 218~. Other key words: "computational graph, back propogation"
 + **multiGPU**. How to use multiGPU to accelerate computation?
 + **云计算服务器**. 怎么租用阿里云服务器，或者amazon, tencent, nvidia, Google, facebook等的服务器进行高性能计算？
 + **CNN**. An [great illustration](https://zhuanlan.zhihu.com/p/25249694) of CNN, written by Juefei Zhang, an Alibaba engineerer. For each single command to build a CNN in tensorflow, see [Web(API in jianshu, in Chinese)](https://www.jianshu.com/p/e3a79eac554f) and [Web(github, in English)](https://github.com/jikexueyuanwiki/tensorflow-zh/blob/master/SOURCE/api_docs/python/nn.md).
