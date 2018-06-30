@@ -1,3 +1,3 @@
 # 4 - Cases study
-## 4 - 1 Solving lasso problem
-## 4 - 2 Classification using Neural network (for Iris dataset)
++ **4 - 1 Solving lasso problem**. [(no)]
++ **4 - 2 Classification using Neural network (for Iris dataset)**. [(notebook)](https://github.com/suzyi/tensorflow/blob/master/Cases/Iris%20classification/IrisClassification.ipynb)
