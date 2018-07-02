@@ -11,6 +11,7 @@ Something confused me
 + **How to calculate padding and output shape when use `nn.conv2d()` to MNIST?** See [(Web1)](https://blog.csdn.net/jk981811667/article/details/78892480) and [(Web2)](http://cs231n.github.io/convolutional-networks/)
 + **adam algorithm**. Read the original paper about adam algorithm. [Train a filter to acheive a goal, like classification or shape detection, 训练CNN的意义是在训练滤波器，是滤波器对特定的模式有较高的激活](https://www.zhihu.com/question/39022858).
 + **dropout algorithm in tensorflow**. Read the original code for dropout algorithm in tensorflow.
++ **machine learning dataset**.[(UCI)](http://archive.ics.uci.edu/ml/index.php)
 + Whether NIST is a binary?
 + Tensorflow的图结构是什么? 是表示tensor在图中流过吗?[(understand computational graph)](http://www.bubuko.com/infodetail-2280472.html) 也许这样的方式就是可微分编程！
 + 蓝牙通讯的原理是什么?怎样搭建局域网？ Use "teamviewer" to connect two computer. Key words "Jupyter远程登录","两台电脑在不联网的情况下如何设置局域网互相访问？"
