@@ -44,6 +44,8 @@ There are two methods to install CUDA, including distribution-specific packages 
 + **uninstall CUDA Toolkit and reinstall**. You just need to uninstall CUDA Toolkit, do not uninstall cuDNN and tensorflow. With this step finished, reboot and you will see a high resolution in the screen.
 + **test on cuDNN to see if it works well now**. Just do the same as the above troubleshooting for cuDNN. If it works correctly, you have got out of this problem and then ignore the following step. But you screen might tell you there are some "fatal error". With this situation, try tensorflow "Hello, world!" examples in terminal (command line), to see if it's ok. If this example works fine, you can ignore the "make error".
 + **uninstall cuDNN**. Via the Tar file based installing instruction, you can see the installation of cuDNN is actually a copy process thus then you can uninstall cuDNN bu delete these files- if you want.
+### error: failed to create session.
+solution `sudo kill -9 your-PID`
 # 2 - Examples of tensorflow
 ## 2-0 - **References**
 + **[api_docs](https://tensorflow.google.cn/api_docs/python/)**. The official api_doc provides an explicit illustration for each single command.
