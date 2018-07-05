@@ -4,5 +4,5 @@
 + **Deal with csv file using python.** [(notebook)](https://github.com/suzyi/tensorflow/blob/master/Cases/whiteWineQualityPrediction/whiteWineQualityprediction.ipynb) includes how to import csv (Comma-Separated Values), convert the data into array so that Tensorflow is able to deal with.
 ## 4 - 1 Applications
 + **4 - 1 Solving lasso problem**. [(notebook)]
-+ **4 - 2 Classification using Neural network (for Iris dataset)**. [(notebook)](https://github.com/suzyi/tensorflow/blob/master/Cases/Iris%20classification/IrisClassification.ipynb).
++ **4 - 2 Classification using Neural network (for Iris dataset)**. [(notebook)](https://github.com/suzyi/tensorflow/blob/master/Cases/Iris%20Classification/IrisClassification.ipynb).
 + **4 - 3 White wines quality prediction.** [(notebook)](https://github.com/suzyi/tensorflow/blob/master/Cases/whiteWineQualityPrediction/whiteWineQualityprediction.ipynb)
