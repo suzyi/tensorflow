@@ -108,3 +108,5 @@ solve lasso using `GradientDescentOptimizer`.
 + See [(notebook-directly solve lasso)](https://github.com/suzyi/tensorflow/blob/master/tf/lasso-directlySolve.ipynb) for solver with no inputs.
 + See [(notebook-no dataset api)](https://github.com/suzyi/tensorflow/blob/master/tf/lasso-NoAPI.ipynb) for solver with training inputs but no data API.
 + See [(notebook-with dataset API)](https://github.com/suzyi/tensorflow/blob/master/tf/lasso-datasetAPI.ipynb) for more high-level solver which use dataset API.
+## 4 - 3 solving constrained optimization problem
+See [(solving constrained optimization problem using TF)](https://www.tensorflow.org/api_docs/python/tf/contrib/opt/ScipyOptimizerInterface)
