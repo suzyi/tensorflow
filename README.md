@@ -109,4 +109,6 @@ solve lasso using `GradientDescentOptimizer`.
 + See [(notebook-no dataset api)](https://github.com/suzyi/tensorflow/blob/master/tf/lasso-NoAPI.ipynb) for solver with training inputs but no data API.
 + See [(notebook-with dataset API)](https://github.com/suzyi/tensorflow/blob/master/tf/lasso-datasetAPI.ipynb) for more high-level solver which use dataset API.
 ## 4 - 3 solving constrained optimization problem
+### 4 - 3 -1 Can tensorflow solve any kind of optimization problem?
+"No, the implementation of the gradient descent methods in tensorflow doesn’t handle constrained problem, and that’s another giant NO. Use cvopt for general optimization." - [Answer sourse](https://www.quora.com/Can-one-optimise-arbitrary-functions-using-tensorflow)
 See [(solving constrained optimization problem using TF)](https://www.tensorflow.org/api_docs/python/tf/contrib/opt/ScipyOptimizerInterface)
