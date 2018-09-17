@@ -10,7 +10,7 @@ Something confused me
 + **CNN**. An [great illustration](https://zhuanlan.zhihu.com/p/25249694) of CNN, written by Juefei Zhang, an Alibaba engineerer. For each single command to build a CNN in tensorflow, see [Web(API in jianshu, in Chinese)](https://www.jianshu.com/p/e3a79eac554f) and [Web(github, in English)](https://github.com/jikexueyuanwiki/tensorflow-zh/blob/master/SOURCE/api_docs/python/nn.md).
 + **How to calculate padding and output shape when use `nn.conv2d()` to MNIST?** See [(Web1)](https://blog.csdn.net/jk981811667/article/details/78892480) and [(Web2)](http://cs231n.github.io/convolutional-networks/)
 + **adam algorithm**. Read the original paper about adam algorithm. [Train a filter to acheive a goal, like classification or shape detection, 训练CNN的意义是在训练滤波器，是滤波器对特定的模式有较高的激活](https://www.zhihu.com/question/39022858).
-+ **dropout algorithm in tensorflow**. Read the original code for dropout algorithm in tensorflow.
++ **dropout algorithm in tensorflow**. Read the original code for dropout algorithm in tensorflow.d
 + **machine learning dataset**.[(UCI)](http://archive.ics.uci.edu/ml/index.php)
 + Whether NIST is a binary?
 + Tensorflow的图结构是什么? 是表示tensor在图中流过吗?[(understand computational graph)](http://www.bubuko.com/infodetail-2280472.html) 也许这样的方式就是可微分编程！
@@ -115,6 +115,8 @@ solve lasso using `GradientDescentOptimizer`.
 
 However, for some simple constrained problems, tensorflow can be used, see [(solving constrained optimization problem using TF)](https://www.tensorflow.org/api_docs/python/tf/contrib/opt/ScipyOptimizerInterface).
 # 5 - compute gradients
+Methods for the computation of derivatives in computer programs can be classified into four categories: (1) manually working out derivatives and coding them; (2) numerical differentiation using finite difference approximations; (3) symbolic differentiation using expression manipulation in computer algebra systems such as Mathematica, Maxima, and Maple; and (4)
+automatic differentiation, also called algorithmic differentiation.
 ## 5 - 1 - numerical differentiation
 ## 5 - 2 - automatic differentiation
 + [Autograd](https://github.com/HIPS/autograd)
