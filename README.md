@@ -114,3 +114,9 @@ solve lasso using `GradientDescentOptimizer`.
 "No, the implementation of the gradient descent methods in tensorflow doesn’t handle constrained problem, and that’s another giant NO. Use cvopt for general optimization." - [Answer sourse](https://www.quora.com/Can-one-optimise-arbitrary-functions-using-tensorflow)
 
 However, for some simple constrained problems, tensorflow can be used, see [(solving constrained optimization problem using TF)](https://www.tensorflow.org/api_docs/python/tf/contrib/opt/ScipyOptimizerInterface).
+# 5 - compute gradients
+## 5 - 1 - numerical differentiation
+## 5 - 2 - automatic differentiation
++ [Autograd](https://github.com/HIPS/autograd)
++ [Torch Autograd](https://github.com/twitter/torch-autograd)
++ tf.gradients()
