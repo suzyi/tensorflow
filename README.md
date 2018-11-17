@@ -90,7 +90,7 @@ solution step-1 `nvidia-smi`, step-2 `sudo kill -9 your-PID`
 + **tf.reduce_sum [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/reduce_sum.ipynb)**
 + **tf.random_uniform(shape,minval=0,maxval=None,dtype=tf.float32,seed=None,name=None)**. Return a uniformly distributed random values with shape are nessary to provide.
 + **tf.random_normal [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/random_normal.ipynb)**. Create random number, seed is optional.
-+ **tensorboard [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/graph/tensorboard.ipynb)**. Graph visualisation.
++ **tensorboard [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/graph/tensorboard.ipynb)**. Graph visualisation. Or [official tensorboard usage](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/running_locally.md)
 + **tf.Variable [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/Variable.ipynb)**. Usage of tf.Variable().
 + **tf.Session [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/Session.ipynb)**.
 + **mnist.train.next_batch [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/next_batch.ipynb)**. Return the next `batch_size` examples from this data set.
