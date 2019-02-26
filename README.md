@@ -64,11 +64,11 @@ solution step-1 `nvidia-smi`, step-2 `sudo kill -9 your-PID`
 ### understanding of MNIST
 + **[NIST](https://www.nist.gov/srd/nist-special-database-19)**. NIST is an original database containing many (binary, at least SD-3 and SD-1 are.) images with handprinting digits or aplabetic characters.
 + **MNIST**. MNIST is a grey levels image database constructed from NIST's Special Database 3 (SD-3) and Special Database 1 (SD-1) with the anti-aliasing technique. One should note that both SD-3 and SD-1 contain binary images. MNIST was normalized to fit a 28-by-28 pixel box while preserving ratio. It has 60000 handwitting images for training and 60000 for testing, while only a subset of 10000 test images is available. The full 60000 training set is available. All files in MIST are not in any standard image format so you have to write your own program to read them.
-+ **Read MNIST using tensorflow in python ([nootbook](https://github.com/suzyi/tensorflow/blob/master/tf/readMNIST.ipynb))**. This nootbook contains codes for reading the images and labels in MNIST. `one_hot=True` gives label with the vector form that has only one non-zero element with value 1 in the vector, like `array([0., 0., 0., 0., 1., 0., 0., 0., 0., 0.])` represents 4, and `one_hot=False` directly gives 4.
++ **Read MNIST using tensorflow in python ([notebook](https://github.com/suzyi/tensorflow/blob/master/tf/readMNIST.ipynb))**. This notebook contains codes for reading the images and labels in MNIST. `one_hot=True` gives label with the vector form that has only one non-zero element with value 1 in the vector, like `array([0., 0., 0., 0., 1., 0., 0., 0., 0., 0.])` represents 4, and `one_hot=False` directly gives 4.
 + **batch_x, batch_y = mnist.train.next_batch(batch_size)**. `batch_x` is of type `numpy.ndarray` with size 'batch_size-by-784', note that `28*28=784` represent any figure in mnist has 784 pixels in tatal. `print(batch_x)`, `print(type(batch_x))` and `print(np.shape(batch_x)` are all available for knowing the attributes of `batch_x`, and use `print(batch_x[:,0])` to see its first column.
 ## 2-2 - Understanding of some single commands
 + **tf.data.Dataset.from_tensor_slices(), dataset.batch(batch_size) [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/from_tensor_slices.ipynb)**. Explicitly description.
-+ **tf.placeholder(dtype, shape=none, name=none), feed_dict ([nootbook](https://github.com/suzyi/tensorflow/blob/master/tf/feed_dict.ipynb))**. By default, `shape=none` represents a univariate variable. `shape=[None, 3]`, gives a matrix with elements are variables, and it has size of 3 columns but under-determined rows.
++ **tf.placeholder(dtype, shape=none, name=none), feed_dict ([notebook](https://github.com/suzyi/tensorflow/blob/master/tf/feed_dict.ipynb))**. By default, `shape=none` represents a univariate variable. `shape=[None, 3]`, gives a matrix with elements are variables, and it has size of 3 columns but under-determined rows.
 + **tf.nn.dropout [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/dropout.ipynb)**. This command haven't been completely figured out.
 + **batch,[将数据集按mini_batch划分](https://sthsf.github.io/wiki/Algorithm/DeepLearning/Tensorflow%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Tensorflow%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86---%E8%AE%AD%E7%BB%83%E6%A0%B7%E6%9C%AC%E7%9A%84batch_size%E6%95%B0%E6%8D%AE%E7%9A%84%E5%87%86%E5%A4%87.html)**
 深度学习的优化算法，说白了就是梯度下降，每次的参数更新有两种方式:
@@ -80,21 +80,21 @@ solution step-1 `nvidia-smi`, step-2 `sudo kill -9 your-PID`
 训练整个样本集需要：100次iteration，1次epoch。1次epoch表示每个样本只用一次。具体的计算公式为：one epoch = numbers of iterations = N = 样本的数量/batch_size
 + **[layer = tf.layer.dense(inputs,units,activation=none,use_bias=true)](https://github.com/tensorflow/tensorflow/blob/r1.2/tensorflow/python/layers/core.py)**. Each row of `inputs` is as a single example. `units` is the dimensionality of output space. Build a densely connected network. Default activation is linear function. Default use a bias. The output `layer` has columns of `units`.
 + **class [tf.Graph](http://wiki.jikexueyuan.com/project/tensorflow-zh/api_docs/python/framework.html#Graph)**. A TensorFlow computation, represented as a dataflow graph. A Graph contains a set of Operation objects, which represent units of computation; and Tensor objects, which represent the units of data that flow between operations.
-+ **[tf.nn.softmax_cross_entropy_with_logits](http://blog.csdn.net/mao_xiao_feng/article/details/53382790)  [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/softmax_cross_entropy_with_logits.ipynb)**. See wikipedia for [cross entropy](https://en.wikipedia.org/wiki/Cross_entropy).
-+ **tf.nn.sparse_softmax_cross_entropy_with_logits [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/sparse_softmax_cross_entropy_with_logits.ipynb)**.
++ **[tf.nn.softmax_cross_entropy_with_logits](http://blog.csdn.net/mao_xiao_feng/article/details/53382790)  [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/softmax_cross_entropy_with_logits.ipynb)**. See wikipedia for [cross entropy](https://en.wikipedia.org/wiki/Cross_entropy).
++ **tf.nn.sparse_softmax_cross_entropy_with_logits [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/sparse_softmax_cross_entropy_with_logits.ipynb)**.
 + **[tf.nn.con2d](https://github.com/HawKsword/deep_learning-machine_learning/blob/83e29893073e297ea5c45622859c1c477f198d33/cnn_tensorflow)**.
-+ **tf.argmax [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/argmax.ipynb)**
-+ **tf.cast [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/cast.ipynb)**
-+ **tf.equal [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/equal.ipynb)**
-+ **tf.reduce_mean [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/reduce_mean.ipynb)**
-+ **tf.reduce_sum [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/reduce_sum.ipynb)**
++ **tf.argmax [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/argmax.ipynb)**
++ **tf.cast [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/cast.ipynb)**
++ **tf.equal [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/equal.ipynb)**
++ **tf.reduce_mean [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/reduce_mean.ipynb)**
++ **tf.reduce_sum [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/reduce_sum.ipynb)**
 + **tf.random_uniform(shape,minval=0,maxval=None,dtype=tf.float32,seed=None,name=None)**. Return a uniformly distributed random values with shape are nessary to provide.
-+ **tf.random_normal [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/random_normal.ipynb)**. Create random number, seed is optional.
-+ **tensorboard [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/graph/tensorboard.ipynb)**. Graph visualisation. Or [official tensorboard usage](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/running_locally.md)
-+ **tf.Variable [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/Variable.ipynb)**. Usage of tf.Variable().
-+ **tf.Session [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/Session.ipynb)**.
-+ **mnist.train.next_batch [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/next_batch.ipynb)**. Return the next `batch_size` examples from this data set.
-+ **3-D tensor, tf.constant, tf.matmul, tf.add [(nootbook)](https://github.com/suzyi/tensorflow/blob/master/tf/matmul.ipynb)**. This notebook contains examples like creating 2-D and 3-D tensors and operations like `tf.constant`, `tf.matmul`, `tf.add`. For tensor A has size of h-by-m-by-n and tensor B has size of h-by-n-by-p, then `tf.matmul(A,B)` gives a tensor with size of h-by-m-by-p. 
++ **tf.random_normal [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/random_normal.ipynb)**. Create random number, seed is optional.
++ **tensorboard [(notebook)](https://github.com/suzyi/tensorflow/blob/master/graph/tensorboard.ipynb)**. Graph visualisation. Or [official tensorboard usage](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/running_locally.md)
++ **tf.Variable [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/Variable.ipynb)**. Usage of tf.Variable().
++ **tf.Session [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/Session.ipynb)**.
++ **mnist.train.next_batch [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/next_batch.ipynb)**. Return the next `batch_size` examples from this data set.
++ **3-D tensor, tf.constant, tf.matmul, tf.add [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/matmul.ipynb)**. This notebook contains examples like creating 2-D and 3-D tensors and operations like `tf.constant`, `tf.matmul`, `tf.add`. For tensor A has size of h-by-m-by-n and tensor B has size of h-by-n-by-p, then `tf.matmul(A,B)` gives a tensor with size of h-by-m-by-p. 
 + **tf.nn.bias_add(), tf.add() [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/bias_add.ipynb)**. We show the difference betweent the `tf.nn.bias_add()` and `tf.add()`.
 ### 2-2-2 - some single commands in building CNN-type network
 + **`weight={'wcl': tf.random_normal([2,3,1,7])}` [(notebook)](https://github.com/suzyi/tensorflow/blob/master/tf/random_normal.ipynb)**
